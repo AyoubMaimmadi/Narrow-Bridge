@@ -141,11 +141,11 @@ class NarrowBridge:
                 
                 
 def main():
-    min_cars = 4
-    max_cars = 9
+    min_cars = 3
+    max_cars = 5
     max_cars_on_bridge = 3
-    t_min = 5
-    t_max = 10
+    t_min = 1
+    t_max = 2
     bridge_sim = NarrowBridge(min_cars,max_cars,t_min,t_max,max_cars_on_bridge)
     bridge_sim.create_threads()
     bridge_sim.join_threads()
