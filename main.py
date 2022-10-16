@@ -3,7 +3,7 @@ import logging
 import time
 import random
 
-class Bridge:
+class NarrowBridge:
     
         def __init__(self,min_cars,max_cars,t_min,t_max,max_cars_on_bridge):
             #initialize the directions of the cars
@@ -146,7 +146,7 @@ def main():
     max_cars_on_bridge = 3
     t_min = 5
     t_max = 10
-    bridge_sim = Bridge(min_cars,max_cars,t_min,t_max,max_cars_on_bridge)
+    bridge_sim = NarrowBridge(min_cars,max_cars,t_min,t_max,max_cars_on_bridge)
     bridge_sim.create_threads()
     bridge_sim.join_threads()
     print("Finished.")
